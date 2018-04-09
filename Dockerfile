@@ -24,4 +24,3 @@ COPY --from=build-env /go/bin/hello-app .
 COPY --from=build-env /go/src/hello-app/views/hello.html ./views/hello.html
 ENV PORT 8080
 CMD ["./hello-app"]
-#ENTRYPOINT ["./hello-app"]
